@@ -3,16 +3,14 @@ module API
     skip_before_action :authenticate_user!, only: [:create]
 
     def create
-      @user = User.new(user_params)
-      return if @user.save
-
-      response_error(message: "Validation errors in your request.", validation_errors: @user.errors.messages)
+      @customer = Customer.new(phone_number)
+      @customer.save
     end
 
     private
 
-    def user_params
-      params.require(:user).permit(:email, :password, :avatar)
+    def customer_params
+      params.permit(:email, :full_name, :user_type, :phone_number)
     end
   end
 end
