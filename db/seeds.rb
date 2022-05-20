@@ -1,2 +1,3 @@
-AdminUser.create!(email: 'admin@mail.com', password: '123123', password_confirmation: '123123')
-User.create!(email: 'user1@mail.com', password: '123123')
+AdminUser.create!(email: 'sirishk@sirista.com', password: '123123', password_confirmation: '123123')
+AdminUser.create!(email: 'bharani@kountopay.com', password: '123123', password_confirmation: '123123')
+AdminUser.create!(email: 'hudson@kountopay.com', password: '123123', password_confirmation: '123123')
