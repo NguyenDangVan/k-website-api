@@ -2,6 +2,7 @@ module API
   class UsersController < API::BaseController
     skip_before_action :authenticate_user!, only: [:create]
 
+    # POST api/users
     def create
       @customer = Customer.new(phone_number)
       @customer.save
