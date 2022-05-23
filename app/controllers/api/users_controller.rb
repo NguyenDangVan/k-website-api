@@ -4,7 +4,7 @@ module API
 
     # POST api/users
     def create
-      @customer = Customer.new(phone_number)
+      @customer = Customer.new(customer_params)
       @customer.save
     end
 
