@@ -1,0 +1,2 @@
+class TpsCustomer < ApplicationRecord
+end

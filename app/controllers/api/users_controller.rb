@@ -4,7 +4,12 @@ module API
 
     # POST api/users
     def create
-      @customer = Customer.new(customer_params)
+      if params[:is_tps] == "true"
+        @customer = TpsCustomer.new(customer_params)
+      else
+        @customer = Customer.new(customer_params)
+      end
+
       @customer.save
     end
 
