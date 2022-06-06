@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: fivemintub_backend_production
-  username: fivemintub_backend
-  password: <%= ENV['FIVEMINTUB_BACKEND_DATABASE_PASSWORD'] %>
+  database: <%= ENV['RDS_DBNAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
