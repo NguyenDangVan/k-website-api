@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '2.7.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
@@ -74,11 +74,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Authentication & Authoziration
 gem 'devise'
 gem 'pundit'
-gem 'devise-jwt', '~> 0.8.0'
 gem 'rack-cors'
 
 gem 'activeadmin'
-gem 'formadmin' # Theme for activeadmin
 
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'pry-rails', :group => :development
@@ -91,4 +89,3 @@ gem 'discard', '~> 1.2'
 gem 'ransack'
 
 gem 'carrierwave', '~> 2.0'
-gem 'fog', require: 'fog/aws' # User for aws
