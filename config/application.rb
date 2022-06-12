@@ -16,7 +16,6 @@ module FivemintubBackend
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
     excluded_routes = ->(env) { !env["PATH_INFO"].match(%r{^/api}) }
   end
 end

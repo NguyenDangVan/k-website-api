@@ -1,7 +1,7 @@
 lock "~> 3.17.0"
 
 set :application, "k-api"
-set :repo_url, "git@github.com:hdchinh/k-website-api.git"
+set :repo_url, "git@github.com:NguyenDangVan/k-website-api.git"
 set :ssh_options, { :forward_agent => true }
 
 set :pty, true
