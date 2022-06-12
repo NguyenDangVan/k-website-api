@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -59,3 +60,10 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+=======
+set :stage, :production
+set :rails_env, :production
+set :branch, "master"
+set :deploy_to, "/home/deploy/deploy/k_api"
+server "18.136.67.161", user: "deploy", roles: %w{app db web}
+>>>>>>> fbc05cc (Deploy to ec2)
