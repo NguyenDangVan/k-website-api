@@ -19,17 +19,18 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 gem 'puma'
-
-gem 'capistrano',         require: false
-gem 'capistrano-rvm',     require: false
-gem 'capistrano-rails',   require: false
-gem 'capistrano-bundler', require: false
-gem 'capistrano3-puma',   require: false
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
+gem "capistrano"
+gem "capistrano3-puma"
+gem "capistrano-rails", require: false
+gem 'capistrano-passenger'
+gem "capistrano-yarn"
+gem "capistrano-bundler", require: false
+gem "capistrano-rvm"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -69,22 +70,10 @@ group :test do
   gem 'shoulda-callback-matchers', '~> 1.1', '>= 1.1.4'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'devise'
+# Authentication & Authoziration
 gem 'pundit'
 gem 'rack-cors'
-
-gem 'activeadmin'
 
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'pry-rails', :group => :development
 gem 'bullet', group: 'development'
-
-gem 'olive_branch'
-gem 'kaminari'
-gem 'discard', '~> 1.2'
-
-gem 'ransack'
-
-gem 'carrierwave', '~> 2.0'
