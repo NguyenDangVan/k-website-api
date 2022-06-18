@@ -4,11 +4,12 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
-require "capistrano/rvm"
+# require "capistrano/rvm"
+ require 'capistrano/rbenv'
 require "capistrano/bundler"
-# require "capistrano/rails/assets"
+require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
-require "capistrano/passenger"
+# require "capistrano/passenger"
 # require 'capistrano/yarn'
 require 'capistrano/puma'
 install_plugin Capistrano::Puma
