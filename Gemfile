@@ -74,6 +74,6 @@ end
 gem 'pundit'
 gem 'rack-cors'
 gem 'devise'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails'
 gem 'pry-rails', :group => :development
 gem 'bullet', group: 'development'

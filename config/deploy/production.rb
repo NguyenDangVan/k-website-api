@@ -6,6 +6,8 @@ set :ssh_options, {
   user: 'deploy',
 }
 
+ask(:password, nil, echo: false)
+
 # role :name, %{[user]@[IP adde.]}
 role :app, %w{deploy@18.138.186.29}
 role :web, %w{deploy@18.138.186.29}
